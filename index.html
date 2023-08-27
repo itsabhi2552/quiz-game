@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body onload="generate_question()">
+    <div class="container bg-light rounded border mt-5">
+        <div class="row">
+            <div class="col-12 text-center rounded bg-dark">
+                <h1 class="text-light" id="quiz">Quiz</h1>
+            </div>
+            <div class="col-12 mt-3 mx-3" id="answer-key"></div>
+            <div class="container rounded border m-3" id="mycontainer">
+                <div class="row">
+                    <div class="col" id="content">
+                        <div class="m-3" id="question"></div>
+                        <div class="m-3">
+                                <input type="radio" id="o1" name="opt" value="1">
+                                <label for="o1" id="l1"></label><br>
+                                <input type="radio" id="o2" name="opt" value="2">
+                                <label for="o2" id="l2"></label><br>
+                                <input type="radio" id="o3" name="opt" value="3">
+                                <label for="o3" id="l3"></label><br>
+                                <input type="radio" id="o4" name="opt" value="4">
+                                <label for="o4" id="l4"></label>
+                        </div>
+                        <div class="rounded text-center m-3 p-2" id="display"></div>
+                        <div class="btn btn-warning m-3" id="submit" onclick="submit()">Submit</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12" id="restart"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
